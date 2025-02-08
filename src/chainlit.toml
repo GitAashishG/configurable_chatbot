@@ -1,0 +1,38 @@
+[project]
+# Whether to enable telemetry (default: true). No personal data is collected.
+enable_telemetry = true
+
+# List of environment variables to be provided by each user to use the app
+user_env = []
+
+# Duration (in seconds) during which the session is saved when the connection is lost
+session_timeout = 3600
+
+[UI]
+# Name of the app and chatbot
+name = "LLM Chat Interface"
+# Description of the app and chatbot
+description = "Chat interface for LLM endpoint"
+
+# The default value for the expand messages settings (default: false)
+default_expand_messages = false
+
+# Hide the chain of thought details from the user (default: false)
+hide_cot = false
+
+# Link to your github repo (default: none)
+github = ""
+
+# Override default MUI light theme. (default: none)
+# See all options here: https://mui.com/material-ui/customization/default-theme/
+[UI.theme.light]
+background = "#FFFFFF"
+paper = "#FFFFFF"
+
+[meta]
+generated_by = "Your Organization"
+version = "1.0.0"
+
+# Limit upload file types and size
+[features.file_upload]
+enable = false
